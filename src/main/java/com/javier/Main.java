@@ -29,12 +29,12 @@ public class Main {
     }
 
 
-    static String solicitarMatricula(String mensaje,int min, int max) throws MatriculaInvalidaException {
+    static String solicitarMatricula(String mensaje, int min, int max) throws MatriculaInvalidaException {
         String matricula;
         System.out.println(mensaje);
         matricula = sc.nextLine();
 
-        if (matricula.length()+1 < min || matricula.length() > max)
+        if (matricula.length() + 1 < min || matricula.length() > max)
             throw new MatriculaInvalidaException("Longitud de matricula invalida");
 
         return matricula;
@@ -58,18 +58,17 @@ public class Main {
                 throw new MatriculaInvalidaException("Los ultimos 3 caracteres deben ser letras");
             }
         }
-
         return true;
     }
+}
 
-    static class MatriculaInvalidaException extends Exception {
+class MatriculaInvalidaException extends Exception {
 
-        public MatriculaInvalidaException(String mensaje) {
-            super(mensaje);
-        }
+    public MatriculaInvalidaException(String mensaje) {
+        super(mensaje);
+    }
 
-        public MatriculaInvalidaException() {
-            super("Matricula invalida");
-        }
+    public MatriculaInvalidaException() {
+        super("Matricula invalida");
     }
 }
