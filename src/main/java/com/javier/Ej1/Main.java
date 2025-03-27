@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-/**
+/*
  * Escribe un metod que se encargue de solicitar números al usuario, validando que no se
  * introduzcan letras, hasta que se indique un número negativo. Los números deben guardarse en un
  * array
@@ -20,9 +20,9 @@ public class Main {
 
     /**
      * @return devuelve un array de numeros decimales
-     * @throws InputMismatchException puede lanzar una excepcion de entrada incorrecta
+     * @throws NumberFormatException puede lanzar una excepcion de entrada incorrecta
      */
-    static double[] solicitarNums() throws InputMismatchException {
+    static double[] solicitarNums() throws NumberFormatException {
         double[] nums = new double[10];
         double num;
         int size = 0;

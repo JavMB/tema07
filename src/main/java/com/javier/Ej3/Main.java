@@ -4,7 +4,7 @@ import com.javier.lib.IO;
 
 import java.util.*;
 
-/**
+/*
  * Escribe un programa que lea por teclado una secuencia de números hasta que el usuario inserte letras.
  * Al final del programa, debe visualizarse el número más alto de todos los que se hayan
  * introducido. Puede ocurrir que un usuario no llegue a insertar ningún número.

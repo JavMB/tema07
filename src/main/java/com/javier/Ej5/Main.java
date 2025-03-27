@@ -1,6 +1,4 @@
 package com.javier.Ej5;
-
-import java.time.DateTimeException;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.Scanner;
